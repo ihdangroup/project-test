@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Sep 2025 pada 08.39
+-- Waktu pembuatan: 27 Sep 2025 pada 08.51
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.2.4
 
@@ -39,13 +39,6 @@ CREATE TABLE `employees` (
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data untuk tabel `employees`
---
-
-INSERT INTO `employees` (`id`, `nik`, `name`, `position`, `phone`, `email`, `photo`, `created_at`, `updated_at`) VALUES
-(1, '2252352353252352', 'ikhdan', 'dev', '4646464', 'ddgdgd@gmail.com', '1758939742035-770972301.jpg', '2025-09-27 02:19:56', '2025-09-27 05:22:37');
-
 -- --------------------------------------------------------
 
 --
@@ -62,15 +55,6 @@ CREATE TABLE `users` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data untuk tabel `users`
---
-
-INSERT INTO `users` (`id`, `username`, `password`, `full_name`, `email`, `role`, `created_at`, `updated_at`) VALUES
-(2, 'idn12', '$2b$10$nPNFgeLVZc./xw9SOK99Cu3eI9p269Avc9n2IO7FeWwmntxRfTtky', 'ikhdan', 'idan@gmail.com', NULL, '2025-09-26 22:41:37', '2025-09-27 05:54:14'),
-(8, 'mahmud123', '$2b$10$GsjwmHX7bo.Tyt.3i2P8wuwoIPa.eWwSVpkhy4uLepMzH3wfV8cSS', 'mahmud', 'mahmud@gmail.com', NULL, '2025-09-27 05:32:26', '2025-09-27 05:53:05'),
-(10, 'darwin', '$2b$10$dZlI0/zezpr80PssofisDeTSm32JCR2eKw4k1u8nGrZWhQXKWaR9O', 'darwin', 'darwin@gmail.com', '', '2025-09-27 05:58:01', '2025-09-27 05:58:01');
 
 --
 -- Indexes for dumped tables
