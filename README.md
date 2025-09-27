@@ -9,7 +9,7 @@ Fitur utama:
 - CRUD User
 - CRUD Employee
 - Autentikasi login/logout
-- Role-based access (Admin/User)
+
 
 ---
 
